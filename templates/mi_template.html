@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Este es mi primer tempalte!</h1>
+        <p>{{nombre}} {{apellido}}</p>
+        {% if numeros %}
+        <ul>
+            {% for numero in numeros %}
+            <li>{{numero}}</li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>No existen numeros.</p>
+        {% endif %}
+    </body>
+</html>
